@@ -1,0 +1,225 @@
+:root {
+  --card-bg-color: rgba(44, 44, 46, 0.72);
+  --text-primary-color: #ffffff;
+  --text-secondary-color: #aeaeb2;
+  --accent-color: #0096ff;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  color: var(--text-primary-color);
+  margin: 0;
+  padding: 10px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 1s ease-in-out;
+}
+
+.morning-bg {
+  background-image: linear-gradient(
+      rgba(255, 220, 180, 0.4),
+      rgba(255, 180, 120, 0.4)
+    ),
+    url("sang.jpg");
+}
+
+.noon-bg {
+  background-image: linear-gradient(
+      rgba(135, 206, 250, 0.3),
+      rgba(30, 144, 255, 0.3)
+    ),
+    url("trua.jpg");
+}
+
+.sunset-bg {
+  background-image: linear-gradient(
+      rgba(255, 94, 77, 0.6),
+      rgba(255, 154, 0, 0.6)
+    ),
+    url("chieu.jpg");
+}
+
+.night-bg {
+  background-image: linear-gradient(rgba(25, 25, 60, 0.7), rgba(0, 0, 40, 0.7)),
+    url("toi.jpg");
+}
+
+.weather-app-container {
+  width: 95vw;
+  max-width: 1400px;
+  margin: 30px auto 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ios-card {
+  background-color: var(--card-bg-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  padding: 20px 30px;
+}
+
+.app-title {
+  text-align: center;
+}
+
+.app-title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.selectors {
+  display: flex;
+  gap: 20px;
+}
+
+.selectors .input-group {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectors h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-secondary-color);
+}
+
+.selectors select,
+.selectors input[type="date"] {
+  background-color: rgba(18, 18, 18, 0.9);
+  color: var(--text-primary-color);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.selectors input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.selectors input[type="date"]::-webkit-datetime-edit-text,
+.selectors input[type="date"]::-webkit-datetime-edit-month-field,
+.selectors input[type="date"]::-webkit-datetime-edit-day-field,
+.selectors input[type="date"]::-webkit-datetime-edit-year-field {
+  color: var(--text-primary-color);
+}
+
+.daily-forecast {
+  padding: 20px 40px 35px 40px;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.daily-forecast h2 {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.daily-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.daily-item {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px 5px 15px 5px;
+  border-right: 1px solid var(--border-color);
+}
+
+.daily-item:last-child {
+  border-right: none;
+}
+
+.daily-item .day-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.daily-item .weather-icon {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.daily-item .rain-chance {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+}
+
+.daily-item .temps {
+  font-size: 1rem;
+}
+
+.daily-item .temp-low {
+  color: var(--text-secondary-color);
+}
+
+.daily-item .temp-high {
+  font-weight: 700;
+}
+
+.weather-summary {
+  padding: 18px 28px;
+  min-height: 100px;
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-container {
+  margin-top: 20px;
+  height: 220px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 255, 255, 0.05),
+    transparent 60%
+  );
+}
+
+#temp-chart {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự Báo Thời Tiết</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fontsource/sf-pro-display@4/index.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="morning-bg">
+    <div class="weather-app-container">
+      <section class="app-title">
+        <h1>DỰ BÁO THỜI TIẾT</h1>
+      </section>
+
+      <section class="ios-card selectors">
+        <div class="input-group">
+          <h2>CHỌN THÀNH PHỐ</h2>
+          <select id="city-selector"></select>
+        </div>
+
+        <div class="input-group">
+          <h2>CHỌN NGÀY</h2>
+          <input type="date" id="date-picker" />
+        </div>
+      </section>
+
+      <section class="ios-card daily-forecast">
+        <h2>DỰ BÁO 7 NGÀY TIẾP THEO</h2>
+        <div class="daily-list" id="daily-list"></div>
+        <div class="chart-container">
+          <canvas id="temp-chart"></canvas>
+        </div>
+      </section>
+      <section class="ios-card weather-summary" id="weather-summary"></section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
