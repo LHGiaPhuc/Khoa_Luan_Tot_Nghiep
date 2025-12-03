@@ -1,116 +1,121 @@
-Chào thầy cô, em có một vài lưu ý như sau:
-Cài đặt thư viện của python
-run app.py bằng lệnh python app.py, click vào link trong phần terminal để chạy UI.
 
-Pakage                       Version
-------------------------------------------
-absl-py                      2.3.1
-altair                       5.5.0
-annotated-doc                0.0.4
-annotated-types              0.7.0
-anyio                        4.11.0
-astunparse                   1.6.3
-attrs                        25.4.0
-blinker                      1.9.0
-cachetools                   6.2.2
-certifi                      2025.11.12
-charset-normalizer           3.4.4
-click                        8.3.1
-colorama                     0.4.6
-contourpy                    1.3.2
-cycler                       0.12.1
-distro                       1.9.0
-et_xmlfile                   2.0.0
-exceptiongroup               1.3.1
-fastapi                      0.122.0
-Flask                        3.1.2
-flatbuffers                  25.9.23
-fonttools                    4.60.1
-gast                         0.6.0
-gitdb                        4.0.12
-GitPython                    3.1.45
-google-auth                  2.41.1
-google-auth-oauthlib         1.2.3
-google-pasta                 0.2.0
-grpcio                       1.76.0
-h11                          0.16.0
-h5py                         3.15.1
-httpcore                     1.0.9
-httpx                        0.28.1
-idna                         3.11
-itsdangerous                 2.2.0
-Jinja2                       3.1.6
-jiter                        0.12.0
-joblib                       1.3.2
-jsonschema                   4.25.1
-jsonschema-specifications    2025.9.1
-keras                        2.15.0
-kiwisolver                   1.4.9
-libclang                     18.1.1
-Markdown                     3.10
-markdown-it-py               4.0.0
-MarkupSafe                   3.0.3
-matplotlib                   3.8.2
-mdurl                        0.1.2
-ml-dtypes                    0.2.0
-namex                        0.1.0
-narwhals                     2.12.0
-numpy                        1.26.4
-oauthlib                     3.3.1
-openai                       2.8.1
-openpyxl                     3.1.5
-opt_einsum                   3.4.0
-optree                       0.18.0
-packaging                    25.0
-pandas                       2.2.2
-pillow                       12.0.0
-pip                          25.3
-protobuf                     4.25.8
-pyarrow                      21.0.0
-pyasn1                       0.6.1
-pyasn1_modules               0.4.2
-pydantic                     2.12.4
-pydantic_core                2.41.5
-pydeck                       0.9.1
-Pygments                     2.19.2
-pyodbc                       5.3.0
-pyparsing                    3.2.5
-python-dateutil              2.9.0.post0
-python-dotenv                1.2.1
-pytz                         2025.2
-referencing                  0.37.0
-requests                     2.32.5
-requests-oauthlib            2.0.0
-rich                         14.2.0
-rpds-py                      0.29.0
-rsa                          4.9.1
-scikit-learn                 1.3.2
-scipy                        1.11.4
-seaborn                      0.13.2
-setuptools                   65.5.0
-six                          1.17.0
-smmap                        5.0.2
-sniffio                      1.3.1
-starlette                    0.50.0
-streamlit                    1.51.0
-tenacity                     9.1.2
-tensorboard                  2.15.2
-tensorboard-data-server      0.7.2
-tensorflow                   2.15.0
-tensorflow-estimator         2.15.0
-tensorflow-intel             2.15.0
-tensorflow-io-gcs-filesystem 0.31.0
-termcolor                    3.2.0
-threadpoolctl                3.6.0
-toml                         0.10.2
-tornado                      6.5.2
-tqdm                         4.67.1
-typing_extensions            4.15.0
-typing-inspection            0.4.2
-tzdata                       2025.2
-urllib3                      2.5.0
-uvicorn                      0.38.0
-watchdog                     6.0.0
-Werkzeug                     3.1.3
-wheel                        0.45.1
-wrapt                        1.14.2
+Em chào thầy cô ạ,
+
+Em có một vài lưu ý về cách chạy các file code của em như sau:
+
+Chạy file app.py bằng lệnh python app.py, click vào link trong phần terminal để chạy UI.
+
+Cài đặt thư viện của Python
+
+| Package | Version |
+|--------|---------|
+| absl-py | 2.3.1 |
+| altair | 5.5.0 |
+| annotated-doc | 0.0.4 |
+| annotated-types | 0.7.0 |
+| anyio | 4.11.0 |
+| astunparse | 1.6.3 |
+| attrs | 25.4.0 |
+| blinker | 1.9.0 |
+| cachetools | 6.2.2 |
+| certifi | 2025.11.12 |
+| charset-normalizer | 3.4.4 |
+| click | 8.3.1 |
+| colorama | 0.4.6 |
+| contourpy | 1.3.2 |
+| cycler | 0.12.1 |
+| distro | 1.9.0 |
+| et_xmlfile | 2.0.0 |
+| exceptiongroup | 1.3.1 |
+| fastapi | 0.122.0 |
+| Flask | 3.1.2 |
+| flatbuffers | 25.9.23 |
+| fonttools | 4.60.1 |
+| gast | 0.6.0 |
+| gitdb | 4.0.12 |
+| GitPython | 3.1.45 |
+| google-auth | 2.41.1 |
+| google-auth-oauthlib | 1.2.3 |
+| google-pasta | 0.2.0 |
+| grpcio | 1.76.0 |
+| h11 | 0.16.0 |
+| h5py | 3.15.1 |
+| httpcore | 1.0.9 |
+| httpx | 0.28.1 |
+| idna | 3.11 |
+| itsdangerous | 2.2.0 |
+| Jinja2 | 3.1.6 |
+| jiter | 0.12.0 |
+| joblib | 1.3.2 |
+| jsonschema | 4.25.1 |
+| jsonschema-specifications | 2025.9.1 |
+| keras | 2.15.0 |
+| kiwisolver | 1.4.9 |
+| libclang | 18.1.1 |
+| Markdown | 3.10 |
+| markdown-it-py | 4.0.0 |
+| MarkupSafe | 3.0.3 |
+| matplotlib | 3.8.2 |
+| mdurl | 0.1.2 |
+| ml-dtypes | 0.2.0 |
+| namex | 0.1.0 |
+| narwhals | 2.12.0 |
+| numpy | 1.26.4 |
+| oauthlib | 3.3.1 |
+| openai | 2.8.1 |
+| openpyxl | 3.1.5 |
+| opt_einsum | 3.4.0 |
+| optree | 0.18.0 |
+| packaging | 25.0 |
+| pandas | 2.2.2 |
+| pillow | 12.0.0 |
+| pip | 25.3 |
+| protobuf | 4.25.8 |
+| pyarrow | 21.0.0 |
+| pyasn1 | 0.6.1 |
+| pyasn1_modules | 0.4.2 |
+| pydantic | 2.12.4 |
+| pydantic_core | 2.41.5 |
+| pydeck | 0.9.1 |
+| Pygments | 2.19.2 |
+| pyodbc | 5.3.0 |
+| pyparsing | 3.2.5 |
+| python-dateutil | 2.9.0.post0 |
+| python-dotenv | 1.2.1 |
+| pytz | 2025.2 |
+| referencing | 0.37.0 |
+| requests | 2.32.5 |
+| requests-oauthlib | 2.0.0 |
+| rich | 14.2.0 |
+| rpds-py | 0.29.0 |
+| rsa | 4.9.1 |
+| scikit-learn | 1.3.2 |
+| scipy | 1.11.4 |
+| seaborn | 0.13.2 |
+| setuptools | 65.5.0 |
+| six | 1.17.0 |
+| smmap | 5.0.2 |
+| sniffio | 1.3.1 |
+| starlette | 0.50.0 |
+| streamlit | 1.51.0 |
+| tenacity | 9.1.2 |
+| tensorboard | 2.15.2 |
+| tensorboard-data-server | 0.7.2 |
+| tensorflow | 2.15.0 |
+| tensorflow-estimator | 2.15.0 |
+| tensorflow-intel | 2.15.0 |
+| tensorflow-io-gcs-filesystem | 0.31.0 |
+| termcolor | 3.2.0 |
+| threadpoolctl | 3.6.0 |
+| toml | 0.10.2 |
+| tornado | 6.5.2 |
+| tqdm | 4.67.1 |
+| typing_extensions | 4.15.0 |
+| typing-inspection | 0.4.2 |
+| tzdata | 2025.2 |
+| urllib3 | 2.5.0 |
+| uvicorn | 0.38.0 |
+| watchdog | 6.0.0 |
+| Werkzeug | 3.1.3 |
+| wheel | 0.45.1 |
+| wrapt | 1.14.2 |
